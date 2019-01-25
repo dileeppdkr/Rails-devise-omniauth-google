@@ -1,24 +1,36 @@
-# README
+# Rails-devise-omniauth-google
+user signing in via Google 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Things you need to install:
 
-Things you may want to cover:
-
-* Ruby version
-
+* Framework
+	- rails, -> 5.2.2
+* Ruby
+	- ruby '2.3.1'
+* Database
+	- PostgreSQL 9.6.5
 * System dependencies
+	- devise
+	- omniauth
+	- 'omniauth-google-oauth2', '-> 0.4.1'
+* Setup
+	- Go to https://console.developers.google.com and login with your google account.
+	- Create / select project
+	- Click on Credentials and click on the “OAuth consent screen” tab to set up
+	- Under credentials the tab, create an OAuth client ID
+	- You require the client ID and client secret for your rails app
 
-* Configuration
+## Installation
 
-* Database creation
+    git check out https://github.com/dileeppdkr/Rails-devise-omniauth-google.git
 
-* Database initialization
+    cd /project_folder
 
-* How to run the test suite
+    rake db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+    rails s/server
 
-* Deployment instructions
-
-* ...
+## Usage
+1. Login/Register 
+2. Login/Register using google 
+3. reset password instructions 

@@ -287,5 +287,5 @@ Devise.setup do |config|
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
   # end
-  config.omniauth :google_oauth2, "137818673186-34343.apps.googleusercontent.com", "df3r323fe324", scope: 'userinfo.email,userinfo.profile'
+  config.omniauth :google_oauth2, "Google Client ID ", " Google Client secret ", scope: 'userinfo.email,userinfo.profile'
 end
